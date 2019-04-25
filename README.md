@@ -17,3 +17,13 @@ To make this app trusted (remove toolbar) you must add
 using path `https://<host>/.well-known/assetlinks.json`
 
 SHA-256 key is obtained from the `Google Play Console -> Release Management -> App Signing` and is checked in the location above every time user opens the app.
+
+
+## Build process
+To build the app go to `Android Studio -> Build -> Generate Signed Bundle / APK`
+
+Choose `APK`, select the key store file, enter passwords and click `Next`
+
+Choose `release` build variant and check both `Signature versions`, then `Finish`
+
+Your app is now ready to be published/updated to Play Store.
